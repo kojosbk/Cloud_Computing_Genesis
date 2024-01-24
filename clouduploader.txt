@@ -26,4 +26,3 @@ echo "Target Directory: $TARGET_DIRECTORY"
 echo "Storage Class: $STORAGE_CLASS"
 
 
-setup
