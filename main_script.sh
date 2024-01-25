@@ -10,6 +10,7 @@
 # Import necessary scripts
 source cli_parser.sh
 source file_checker.sh
+source file_upload.sh
 source file_upload_feedback.sh
 source file_upload_advanced.sh
 source distribution_script.sh
@@ -25,6 +26,9 @@ function main() {
     if [ $? -eq 0 ]; then
         # File exists, proceed with the upload process
         echo "File '$FILENAME' found. Initiating upload process..."
+
+        # Upload the file with basic functionality
+        upload_file "$FILENAME"
 
         # Upload the file with feedback
         upload_file_with_feedback "$FILENAME"
