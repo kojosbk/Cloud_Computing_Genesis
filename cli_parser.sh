@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# main_script.sh
+# cli_parser.sh
 
 # Default values
 filename=""
@@ -20,28 +20,48 @@ function display_usage() {
     echo ""
 }
 
+# Function to parse filename argument
+function parse_filename() {
+    filename="$1"
+}
+
+# Function to parse target directory argument
+function parse_target_directory() {
+    target_directory="$1"
+}
+
+# Function to parse storage class argument
+function parse_storage_class() {
+    storage_class="$1"
+}
+
+# Function to parse other attributes argument
+function parse_other_attributes() {
+    other_attributes="$1"
+}
+
 # Parse command-line arguments
 while [[ $# -gt 0 ]]; do
     key="$1"
 
     case $key in
         -f|--filename)
-            filename="$2"
+            parse_filename "$2"
             shift
             shift
             ;;
         -d|--target-directory)
-            target_directory="$2"
+            parse_target_directory "$2"
             shift
             shift
             ;;
         -s|--storage-class)
-            storage_class="$2"
+            parse_storage_class "$2"
             shift
             shift
             ;;
         -o|--other-attributes)
-            other_attributes="$2"
+            parse_other_attributes "$2"
             shift
             shift
             ;;
