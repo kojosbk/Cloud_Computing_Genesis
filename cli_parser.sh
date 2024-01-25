@@ -20,62 +20,67 @@ function display_usage() {
     echo ""
 }
 
-# Function for Azure setup and authentication
-function azure_setup_and_authentication() {
-    # Choose a cloud provider (e.g., AWS S3, Google Cloud Storage, Azure Blob Storage).
-    # Setup authentication. For instance, with Azure, you'd use `az login` to set up your credentials.
-    az login
+# Function to parse filename argument
+function parse_filename() {
+    filename="$1"
 }
 
-# Function to parse command-line arguments
-function parse_cli_arguments() {
-    while [[ $# -gt 0 ]]; do
-        key="$1"
-
-        case $key in
-            -f|--filename)
-                filename="$2"
-                shift
-                shift
-                ;;
-            -d|--target-directory)
-                target_directory="$2"
-                shift
-                shift
-                ;;
-            -s|--storage-class)
-                storage_class="$2"
-                shift
-                shift
-                ;;
-            -o|--other-attributes)
-                other_attributes="$2"
-                shift
-                shift
-                ;;
-            *)
-                display_usage
-                exit 1
-                ;;
-        esac
-    done
-
-    # Validate required arguments
-    if [ -z "$filename" ]; then
-        echo "Error: Filename is required."
-        display_usage
-        exit 1
-    fi
-
-    # Setup and authenticate with Azure
-    azure_setup_and_authentication
-
-    # Other logic related to uploading the file to Azure Storage
-    # Example:
-    # az storage blob upload --account-name <account_name> --container-name <container_name> --name <blob_name> --type block --content-type "application/octet-stream" --file "$filename"
-
-    echo "File upload complete!"
+# Function to parse target directory argument
+function parse_target_directory() {
+    target_directory="$1"
 }
 
-# Call the function to parse command-line arguments
-#parse_cli_arguments "$@"
+# Function to parse storage class argument
+function parse_storage_class() {
+    storage_class="$1"
+}
+
+# Function to parse other attributes argument
+function parse_other_attributes() {
+    other_attributes="$1"
+}
+
+# Parse command-line arguments
+while [[ $# -gt 0 ]]; do
+    key="$1"
+
+    case $key in
+        -f|--filename)
+            parse_filename "$2"
+            shift
+            shift
+            ;;
+        -d|--target-directory)
+            parse_target_directory "$2"
+            shift
+            shift
+            ;;
+        -s|--storage-class)
+            parse_storage_class "$2"
+            shift
+            shift
+            ;;
+        -o|--other-attributes)
+            parse_other_attributes "$2"
+            shift
+            shift
+            ;;
+        *)
+            display_usage
+            exit 1
+            ;;
+    esac
+done
+
+# Validate required arguments
+if [ -z "$filename" ]; then
+    echo "Error: Filename is required."
+    display_usage
+    exit 1
+fi
+
+# Other logic related to uploading the file to Azure Storage
+# Example:
+# az storage blob upload --account-name <account_name> --container-name <container_name> --name <blob_name> --type block --content-type "application/octet-stream" --file "$filename"
+
+echo "File upload complete!"
