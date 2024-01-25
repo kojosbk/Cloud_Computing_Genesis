@@ -26,6 +26,14 @@ Specify the storage class for the uploaded file. This argument is optional, and 
 
 Specify other cloud-specific attributes for the file upload. This argument is optional and can include additional attributes such as content encoding, content type, etc.
 
+## Azure Setup and Authentication
+
+Before using the script, make sure to authenticate with Azure using the following command:
+
+```bash
+az login
+```
+
 ## Examples
 
 1. Upload a file without specifying additional options:
@@ -58,4 +66,3 @@ Specify other cloud-specific attributes for the file upload. This argument is op
 - The script supports various advanced features, including multiple file uploads, progress tracking, and encryption. Refer to the README.md for more information.
 
 For more details on the Azure CLI and available options, consult the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/).
-
