@@ -74,7 +74,7 @@ function parse_cli_arguments() {
     # Example:
     # az storage blob upload --account-name <account_name> --container-name <container_name> --name <blob_name> --type block --content-type "application/octet-stream" --file "$filename"
 
-    echo "File upload complete!"
+    # echo "File upload complete!"
 }
 
 # Call the function to parse command-line arguments
