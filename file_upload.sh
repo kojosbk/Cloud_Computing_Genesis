@@ -17,6 +17,12 @@ function upload_file() {
         # File exists, proceed with the upload logic
         echo "Uploading $filename to Azure Blob Storage..."
         # Add your Azure CLI or storage upload logic here
+        az storage blob upload \
+            --account-name kojoskbstg1 \
+            --container-name kojoskbct1 \
+            --account-key VKUAMY0b2g4J0fZI0Fg0y3bs68HIGbwprQO/fzG4jMQHCJDPCwQpm0QM9BYgEj78Sa+Xwz6bEAkR+ASt0gvX9w== \
+            --name "$1" \
+            --file "$1"
         echo "Upload complete!"
     else
         # File does not exist, display an error message

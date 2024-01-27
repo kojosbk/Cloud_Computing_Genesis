@@ -9,7 +9,8 @@ source ../distribution_script.sh
 
 # Test cases for Packaging and Distribution functionality
 
-@test "Packaging the script for distribution" {
+@test "Packaging the script for distribution" 
+{
   # Call the package_script function
   package_script
 
