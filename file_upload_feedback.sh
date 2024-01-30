@@ -17,8 +17,16 @@ function upload_file_with_feedback() {
         # File exists, provide feedback and proceed with the upload logic
         echo "File '$filename' found. Initiating upload to Azure Blob Storage..."
         
+        # Determine the content type dynamically using the 'file' command
+        local content_type=$(file --mime-type -b "$filename")
         # Add your Azure CLI or storage upload logic here
-        # Example: az storage blob upload --account-name <storage_account> --container-name <container> --name <blob_name> --type block --content-type <content_type> --file "$filename"
+        az storage blob upload --account-name kojoskbstg1 \
+         --container-name kojoskbct1 \
+         --name $filename \
+         --type block \
+         --content-type "$content_type" \
+         --file "$filename" \
+         --account-key VKUAMY0b2g4J0fZI0Fg0y3bs68HIGbwprQO/fzG4jMQHCJDPCwQpm0QM9BYgEj78Sa+Xwz6bEAkR+ASt0gvX9w== \
 
         echo "Upload complete!"
     else

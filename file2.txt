@@ -1,0 +1,89 @@
+● Microsoft technologies expertise
+● Cloud Technologies (Azure)
+●
+●
+●
+Technical support experience
+Microsoft technologies expertise
+Virtualization experience
+● Data Analysis
+●
+●
+●
+●
+Python
+Analytical skills
+Communication skills
+Presentation skills
+WORK EXPERIENCE
+IT Support Engineer//Sterling International School, Ghana
+2018 - 2019
+■
+Developed and implemented a technical query management system enabling staff, students and
+parents to submit IT issues and receive prompt resolutions.
+■
+Managed school's server room and network infrastructure to ensure optimal uptime. Performed
+regular maintenance on core switches and liaised with ISPs to quickly resolve connectivity issues.
+■
+Demonstrated commitment to providing a robust, high-availability network environment for staff and
+students.
+■
+Applied strong technical skills to diagnose and repair network hardware issues efficiently with minimal
+disruption.
+■
+Communicated effectively with school stakeholders and vendors to guarantee network uptime and
+service reliability.
+■
+Provided excellent technical support to students, parents and teachers in navigating the school's
+software management system.
+■
+Led the rapid development of an online schooling platform during the pandemic, avoiding school
+shutdown and enabling continued learning.1st line Support (Help Desk) // ACHIMOTA HOSPITAL, Ghana
+2017 - 2018
+■
+Managed patient records using the Carewaex hospital software system to ensure accurate health data
+tracking.
+■
+Provided first-line technica and help desk support within the department, troubleshooting and
+resolving computer and software issues efficiently.
+■Assisted staff members with Microsoft Office/Excel challenges ensuring minimal workflow disruptions.
+■Documented frequent technical problems and solutions, enabling other IT support staff to effectively
+troubleshoot recurring issues.
+■
+Served as the designated first point of contact for departmental IT support requests leveraging
+technical skills to maintain productivity
+Junior Data Scientist // Explore AI,
+South Africa (Remote)
+15 Aug 2022 - 31st January 2023
+■
+■
+■
+Provided coding assistance to team members to solve problems and optimize solutions using languages
+like Python
+Documented modelling methodology including data preprocessing, feature engineering, model evaluation,
+and result interpretation for future reference.
+I successfully developed a user-friendly application using Streamlit, showcasing my capability in designing
+and implementing intuitive software solutions.
+EDUCATION
+●
+Microsoft MD-100: Windows 10
+●
+Certification in software
+Microsoft MD-101: Managingdevelopment
+Modern DesktopsCCNA PART 1
+CompTIA Network+ N10-008Kofi Annan Institutes of
+CompTIA Security+ SY0-601 (2022)Technology, Ghana, 2021
+CompTIA A+ 220-1101 (Core 1)
+●
+HND in Building Technology 2014 -
+CompTIA A+ 220-1102 (Core 2)2017
+CCNA (Ongoing)Accra Technical University, Ghana
+IT Career Switch , United Kingdom ,
+2023
+● Microsoft 365 Certified:
+Fundamentals (Ongoing)
+Cloud Computing (Azure) Ongoing
+Self Study , 2023
+● Data science Certification 2022
+Explore Data Science Academy,
+South Africa
