@@ -127,5 +127,5 @@ function parse_cli_arguments() {
     fi
 }
 
-# Uncomment the below line if you want to call parse_cli_arguments directly in this script
-# parse_cli_arguments "$@"
+Uncomment the below line if you want to call parse_cli_arguments directly in this script
+parse_cli_arguments "$@"

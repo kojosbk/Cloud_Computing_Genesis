@@ -33,7 +33,7 @@ main() {
     for filename in "${file_list[@]}"; do
         echo "Processing file: $filename"
         echo "Uploading file with advanced features..."
-        upload_file_with_advanced_features "$filename" "$target_directory" "$storage_class" "$overwrite_option" "overwrite"
+       upload_file "$filename" 
         echo "Upload process for '$filename' completed successfully."
     done
 }
